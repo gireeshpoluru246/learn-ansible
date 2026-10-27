@@ -1,0 +1,6 @@
+- name: print the variables from inventory
+  hosts: frontend
+  tasks:
+  - name: print the variables
+    debug:
+      msg: "Hello my is {{ first_name }} and doing {{ job }} job"
