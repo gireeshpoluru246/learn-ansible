@@ -1,0 +1,9 @@
+- name: print the variables from play level
+  hosts: local
+  connection: local
+  vars_files:
+    - user-details.yml
+  tasks:
+  - name: print the variables
+    debug:
+      msg: "Hello my is {{ first_name }} and doing {{ job }} job"
