@@ -1,0 +1,6 @@
+- name: print demo
+  hosts: local
+  connection: local
+  tasks:
+    - name: print demo
+      debug:
