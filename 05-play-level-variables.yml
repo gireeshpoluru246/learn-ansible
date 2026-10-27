@@ -1,0 +1,10 @@
+- name: print the variables from play level
+  hosts: local
+  connection: local
+  vars:
+    name: Giri
+    job: software
+  tasks:
+  - name: print the variables
+    debug:
+      msg: "Hello my is {{ name }} and doing {{ job }}"
