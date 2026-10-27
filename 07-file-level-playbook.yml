@@ -1,4 +1,4 @@
-- name: print the variables from play level
+- name: print the variables from file
   hosts: local
   connection: local
   vars_files:
