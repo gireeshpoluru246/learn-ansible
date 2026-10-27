@@ -1,0 +1,17 @@
+<student>
+	<firstName>Suresh</firstName>
+	<lastName>D</lastName>
+	<age>28</age>
+	<addresses>
+		<address type="temparary">
+			<streetName>Gandi Street</streetName>
+			<city>Hyderabad</city>
+			<state>Telangana</state>
+		</address>
+		<address type="permenant">
+			<streetName>Gandi Street</streetName>
+			<city>Hyderabad</city>
+			<state>Telangana</state>
+		</address>
+	</addresses>
+</student>

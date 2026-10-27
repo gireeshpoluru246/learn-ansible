@@ -1,0 +1,24 @@
+{
+  "firstName": "Naresh",
+  "lastName": "S",
+  "age": "29",
+  "addresses": [
+    {
+      "type": "temparary",
+      "StreetName": "Gandi Street",
+      "city": "Hyderabad",
+      "state": "Telangana"
+    },
+    {
+      "type": "permenant",
+      "StreetName": "Gandi Street",
+      "city": "Hyderabad",
+      "state": "Telangana"
+    }
+  ],
+  "skills": {
+    "OS": "Linux",
+    "IDE": "VSCode",
+    "CM": "Ansible"
+  }
+}

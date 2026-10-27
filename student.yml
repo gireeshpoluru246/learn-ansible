@@ -1,0 +1,23 @@
+---
+- first_name: Mahesh
+  last_name: S
+  age: 30
+  addresses:
+    - type: temparary
+      street_name: Gandi Nagar
+      city: Hyderabad
+      state: Telangana
+    - type: permenant
+      street_name: Gandi Nagar
+      city: Hyderabad
+      state: Telangana
+      
+      skill:
+        OS: Windows
+        IDE: Intellj
+        CM: Chef  
+        
+  skills:
+    OS: Linux
+    IDE: VSCode
+    CM: Ansible
