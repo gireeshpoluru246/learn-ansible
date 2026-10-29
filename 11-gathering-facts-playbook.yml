@@ -1,0 +1,7 @@
+- name: print the gathering facts
+  hosts: local
+  connection: local
+  task:
+  - name: print the gathering facts 
+    debug:
+      msg: "{{ ansible_facts }}" # ansible_facts is reservered keyword
