@@ -1,0 +1,16 @@
+- name: install nginx page in Redhat
+  hosts: local
+  connection: local
+  
+  tasks:
+  - name: install nginx in Redhat
+    dnf:
+      name: nginx
+      state: present
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: install nginx in debian
+    dnf:
+      name: nginx
+      state: present
+    when: ansible_facts.os_family == "Debian"
