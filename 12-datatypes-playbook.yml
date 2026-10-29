@@ -1,0 +1,23 @@
+- name: print the data types
+  hosts: local
+  connection: local
+  vars:
+    name: "Suresh" # string
+    age: 28 # number
+    graduate: true # boolean
+    languages: # list
+    - english
+    - hindi
+    more_details: # map/ dict
+      email: "suresh@gmail.com"
+      height: 5.5 # float
+
+  tasks:
+  - name: print the data types
+    debug:
+      msg: |
+         name: {{ name }} : {{ name || type_debug }}
+         age: {{ age }} : : {{ age || type_debug }}
+         graduate: {{ graduate }} : : {{ graduate || type_debug }}
+         languages: {{ languages }} : : {{ languages || type_debug }}
+         more_details: {{ more_details }} : : {{ more_details || type_debug }}
