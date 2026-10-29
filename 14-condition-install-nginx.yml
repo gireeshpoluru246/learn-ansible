@@ -1,7 +1,8 @@
 - name: install nginx page in Redhat
   hosts: local
   connection: local
-  
+  become: yes
+
   tasks:
   - name: install nginx in Redhat
     dnf:
