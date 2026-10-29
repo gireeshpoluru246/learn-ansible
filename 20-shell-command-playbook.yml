@@ -7,7 +7,7 @@
     register: ec2_user_output
 
   - name: print the output
-    debug: {{ ec2_user_output }}
+    debug: "{{ ec2_user_output }}"
 
   - name: get the file 
     command: ls -la > /tmp/files.txt
@@ -15,4 +15,4 @@
 
   - name: files output
     debug:
-      msg: {{ files_output }}
+      msg: "{{ files_output }}"
