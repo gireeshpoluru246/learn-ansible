@@ -3,14 +3,16 @@
   connection: local
   tasks:
   - name: test the shell and command module
-    command: cat /etc/passwd | grep ec2-user
+    #command: cat /etc/passwd | grep ec2-user
+    shell: cat /etc/passwd | grep ec2-user
     register: ec2_user_output
 
   - name: print the output
     debug: "{{ ec2_user_output }}"
 
   - name: get the file 
-    command: ls -la > /tmp/files.txt
+    #command: ls -la > /tmp/files.txt
+    shell: ls -la > /tmp/files.txt
     register: files_output
 
   - name: files output
