@@ -1,0 +1,16 @@
+- name: conditions
+  hosts: local
+  connections: local
+  vars:
+   given_number: 10
+
+   tasks:
+   - name: check even or not
+     debug:
+      msg: "Give Number: {{ given_number }} is even"
+     when: given_number % 2 == 0 # experssion
+
+   - name: check odd or not
+     debug:
+      msg: "Give Number: {{ given_number }} is odd"
+     when: given_number % 2 != 0  # expression 
