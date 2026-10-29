@@ -10,5 +10,9 @@
     debug: {{ ec2_user_output }}
 
   - name: get the file 
-    command: cat /etc/passwd | grep ec2-user
-    register: ec2_user_output
+    command: ls -la > /tmp/files.txt
+    register: files_output
+
+  - name: files output
+    debug:
+      msg: {{ files_output }}
